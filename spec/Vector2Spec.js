@@ -6,17 +6,17 @@ var Vector2 = Vector2 || {};
 
 describe("Vector2", function () {
     "use strict";
+    it("Should contains x and y members", function () {
+        var v = new Vector2(10, 12);
+        expect(v.x).toBe(10);
+        expect(v.y).toBe(12);
+    });
+
     it("Should create from another vector", function () {
         var v = new Vector2(10, 12),
             ov = new Vector2(v);
         expect(ov.x).toBe(v.x);
         expect(ov.y).toBe(v.y);
-    });
-
-    it("Should contains x and y members", function () {
-        var v = new Vector2(10, 12);
-        expect(v.x).toBe(10);
-        expect(v.y).toBe(12);
     });
 
     it("Should give the right angle", function () {

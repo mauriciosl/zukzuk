@@ -1,5 +1,5 @@
-var Vector2 = (function () {
-    "use strict";
+// var Vector2 = (function () {
+//     "use strict";
 
     function Vector2() {
         if(arguments.length > 1){
@@ -36,5 +36,5 @@ var Vector2 = (function () {
         return degrees / RAD2DEGREE;
     }
 
-    return Vector2;
-}());
+    // return Vector2;
+// }());
